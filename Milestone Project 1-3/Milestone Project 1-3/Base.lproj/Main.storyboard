@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tH2-Cp-I72">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="RR7-Mn-ZKD">
+            <objects>
+                <tableViewController id="QaA-LX-eod" customClass="ViewController" customModule="Milestone_Project_1_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="108" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NDW-lt-K9M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="QaA-LX-eod" id="EyV-Qu-GHi"/>
+                            <outlet property="delegate" destination="QaA-LX-eod" id="XHa-Vc-pKX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mN2-Oe-2b6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oKk-mN-UIV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.9710144927537" y="71.651785714285708"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="maq-r2-zbG">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="2ba-p0-3W9" customClass="DetailViewController" customModule="Milestone_Project_1_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DNf-2w-AYf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="France.png" translatesAutoresizingMaskIntoConstraints="NO" id="Teo-Nv-ImS">
+                                <rect key="frame" x="16" y="76" width="382" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="2Aq-pc-ivH"/>
+                                    <constraint firstAttribute="width" constant="382" id="3aC-XB-iDZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHy-LN-f8o">
+                                <rect key="frame" x="170.5" y="301" width="73.5" height="37"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8o0-60-hgj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Teo-Nv-ImS" firstAttribute="leading" secondItem="8o0-60-hgj" secondAttribute="leading" constant="16" id="S44-Xs-mGe"/>
+                            <constraint firstItem="cHy-LN-f8o" firstAttribute="top" secondItem="Teo-Nv-ImS" secondAttribute="bottom" constant="32" id="f3b-tS-QRb"/>
+                            <constraint firstItem="Teo-Nv-ImS" firstAttribute="top" secondItem="8o0-60-hgj" secondAttribute="top" constant="32" id="kts-Lp-awz"/>
+                            <constraint firstItem="cHy-LN-f8o" firstAttribute="centerX" secondItem="DNf-2w-AYf" secondAttribute="centerX" id="tye-YQ-5fS"/>
+                            <constraint firstItem="8o0-60-hgj" firstAttribute="trailing" secondItem="Teo-Nv-ImS" secondAttribute="trailing" constant="16" id="yRD-9F-hAc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countrylabel" destination="cHy-LN-f8o" id="FcF-Rn-vAG"/>
+                        <outlet property="imageView" destination="Teo-Nv-ImS" id="cBh-ui-aQa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncc-lG-nb6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1936.2318840579712" y="75.669642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mHs-s3-sx8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tH2-Cp-I72" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aKt-Ua-q2L">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QaA-LX-eod" kind="relationship" relationship="rootViewController" id="Gg9-4j-zw4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hML-kz-La1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147.82608695652175" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="France.png" width="600" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

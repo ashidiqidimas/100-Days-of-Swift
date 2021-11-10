@@ -1,0 +1,6 @@
+framework module Pods_Milestone_Project_13_15 {
+  umbrella header "Pods-Milestone Project 13-15-umbrella.h"
+
+  export *
+  module * { export * }
+}
